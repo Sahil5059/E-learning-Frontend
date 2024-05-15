@@ -40,7 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={`${poppins.variable} ${josefin.variable} text-black dark:text-white !bg-white bg-no-repeat dark:bg-gradient-to-b dark:from-gray-900 dark:to-black duration-300`}>
+      <body className={`${poppins.variable} ${josefin.variable}`}>
         {/* <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           {children}
           <Toaster position='top-center' reverseOrder={false}/>*/} {/* necessary for using "react-hot-toast" */}
@@ -56,7 +56,7 @@ export default function RootLayout({
 
           {/* STEP: 44 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
           <SessionProvider>
-            <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+            <ThemeProvider attribute='class' defaultTheme="dark" enableSystem>
               <Custom>{children}</Custom>
               <Toaster position='top-center' reverseOrder={false}/>
             </ThemeProvider>
