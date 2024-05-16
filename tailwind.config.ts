@@ -12,6 +12,7 @@ const config: Config = {
       fontFamily: {
         Poppins: ["var(--font-Poppins)"],
         Josefin: ["var(--font-Josefin)"],
+        workSans: ["var(--font-workSans)"],
       },
       screens: {
         "1000px":"1000px",

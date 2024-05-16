@@ -3,6 +3,7 @@ import './globals.css'
 import { Poppins } from "next/font/google";
 //dont forget to write: "'use client'" at the top
 import { Josefin_Sans } from 'next/font/google';
+import { Work_Sans } from "next/font/google";
 import { ThemeProvider } from './utils/theme-provider';
 import { Toaster } from 'react-hot-toast';
 import { useEffect } from 'react';
@@ -33,6 +34,12 @@ const josefin = Josefin_Sans({
   variable: "--font-Josefin",
 });
 
+const workSans = Work_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-workSans",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -40,7 +47,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={`${poppins.variable} ${josefin.variable}`}>
+      <body className={`${poppins.variable} ${josefin.variable} ${workSans.variable}`}>
         {/* <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           {children}
           <Toaster position='top-center' reverseOrder={false}/>*/} {/* necessary for using "react-hot-toast" */}

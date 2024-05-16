@@ -58,8 +58,8 @@ const Navitems: React.FC< Props > = ({ activeItem, isMobile }) => {
                                     y: buttonIndex === index ? 5 : 0,
                                 }}
                                 whileTap={{
-                                    x: 0,
-                                    y: 0,
+                                    x: 5,
+                                    y: 5,
                                 }}
                                 transition={{
                                     ease: "linear",

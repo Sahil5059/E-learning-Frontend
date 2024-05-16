@@ -174,3 +174,7 @@ body {
   background-color: #EBDEFF;
   transition: all 0.1s ease-in-out;
 }
+
+.hero-height {
+  height: calc(100vh - 130px);
+}
